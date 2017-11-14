@@ -1,10 +1,10 @@
 let webpack = require('webpack'); 
 //let webpackDevServer = require('webpack-dev-sever');
 let options = {    
-    entry: './src/app.js',    
+    entry: './src/app/demo.js',    
     output: {    
         path: __dirname,    
-        filename: './bin/app.bundle.js',    
+        filename: './dist/app.bundle.js',    
     },    
     module: {    
         loaders: [{    
