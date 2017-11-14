@@ -1,4 +1,4 @@
-let webpack = require('webpack');
+let webpack = require('webpack'); 
 //let webpackDevServer = require('webpack-dev-sever');
 let options = {    
     entry: './src/app.js',    
