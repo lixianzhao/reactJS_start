@@ -1,4 +1,6 @@
-module.exports = {    
+let webpack = require('webpack');
+//let webpackDevServer = require('webpack-dev-sever');
+let options = {    
     entry: './src/app.js',    
     output: {    
         path: __dirname,    
@@ -12,3 +14,8 @@ module.exports = {
         }]    
     }    
 }    
+
+let compiler = webpack([options]);
+compiler.run(function() {
+
+})
