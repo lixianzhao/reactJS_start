@@ -5,11 +5,13 @@ const webpackDevServer = require('webpack-dev-server');
 const argv = require('minimist')(process.argv.slice(2));
 const options = {    
     entry: {
-        'main': './src/app/main.js'
+        'jsx': './src/jsx/app.js',
+        'component': './src/componentType/app.js',
+        'componentState': './src/componentType/app_stateful.js',
         },    
     output: {    
         path: path.resolve(__dirname, 'assets/js/'),    
-        filename: 'app.bundle.js',    
+        filename: '[name].bundle.js',    
     },    
     module: {    
         rules: [
@@ -29,6 +31,7 @@ const options = {
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
+
     ]    
 }    
 
