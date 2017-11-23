@@ -8,6 +8,7 @@ const options = {
         'jsx': './src/jsx/app.js',
         'component': './src/componentType/app.js',
         'componentState': './src/componentType/app_stateful.js',
+        'app_constrol' : './src/componentType/app_constrol.js'
         },    
     output: {    
         path: path.resolve(__dirname, 'assets/js/'),    
