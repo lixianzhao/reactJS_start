@@ -23,6 +23,6 @@ class Number extends React.Component {
 
     shouldComponentUpdate(newProps, newState) {
         const result = true;
-        
+
     }
 }
